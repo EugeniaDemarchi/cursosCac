@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+}
+
+.contenedor-cursos {
+  display: grid;
+  grid-template:
+    "nav"
+    "header-cursos"
+    "main"
+    "footer-cursos";
+}
+nav {
+  grid-area: nav;
+}
+.header-cursos {
+  grid-area: header-cursos;
+}
+
+main {
+  grid-area: main;
+}
+.footer-cursos {
+  grid-area: footer;
+}
+
+/**********media queries***********/
+
+@media screen and (max-width: 767px) {
+  .contenedor-cursos {
+    display: grid;
+    grid-template:
+      "nav"
+      "header-cursos"
+      "main"
+      "footer-cursos";
+  }
+  nav {
+    grid-area: nav;
+  }
+  .header-cursos {
+    grid-area: header-cursos;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  h3 {
+    color: #354f52;
+    margin-top: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.1rem;
+  }
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    row-gap: 4rem;
+  }
+
+  .Caja {
+    border: 0.0125rem solid #52796f;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .img-box {
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+  /*.img-box img {
+    position: absolute;
+    left: 0;
+    opacity: 1.5 ease-in-out;
+  }
+
+  .img-box img.top:hover {
+    opacity: 0;
+  }*/
+  .info-box {
+    text-align: center;
+    justify-content: center;
+    margin: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    color: #354f52;
+    margin-bottom: 3rem;
+    font-weight: 700;
+  }
+  .btn-caja {
+    background-color: #cad2c5;
+    color: #354f52;
+    padding: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    /*border-radius: 0.5625rem;*/
+  }
+  .btn-caja:link,
+  .btn-caja:visited {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .btn-caja:hover {
+    background-color: #84a98c;
+    color: white;
+  }
+
+  .header-cursos {
+    margin-top: 3.125rem;
+    margin-bottom: 1.5rem;
+    .fachada {
+      width: 100%;
+    }
+    .interior {
+      display: none;
+    }
+    .footer-cursos {
+      grid-area: footer;
+    }
+  }
+}
+
+/***********************************************************/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor-cursos {
+    display: grid;
+    grid-template:
+      "nav"
+      "header-cursos"
+      "main"
+      "footer-cursos";
+  }
+  nav {
+    grid-area: nav;
+  }
+  .header-cursos {
+    grid-area: header-cursos;
+    margin-top: 3.125rem;
+    margin-bottom: 1.5rem;
+  }
+  .fachada {
+    width: 100%;
+  }
+  .interior {
+    display: none;
+  }
+  main {
+    grid-area: main;
+  }
+  .footer-cursos {
+    grid-area: footer;
+  }
+  h3 {
+    color: #354f52;
+    margin-top: 5rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    word-spacing: 0.2rem;
+  }
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    row-gap: 4rem;
+  }
+  .Caja {
+    border: 0.0125rem solid #52796f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .img-box {
+    width: 100%;
+    height: fit-content;
+  }
+  .info-box {
+    text-align: center;
+    margin: 3rem;
+    width: 50%;
+  }
+  h2 {
+    font-size: 1.2rem;
+    color: #354f52;
+    margin-bottom: 3rem;
+    font-weight: 700;
+  }
+  .btn-caja {
+    background-color: #cad2c5;
+    color: #354f52;
+    padding: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    /*border-radius: 0.5625rem;*/
+  }
+  .btn-caja:link,
+  .btn-caja:visited {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .btn-caja:hover {
+    background-color: #84a98c;
+    color: white;
+  }
+}
+
+/********************************************************************/
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .contenedor-cursos {
+    display: grid;
+    grid-template:
+      "nav"
+      "header-cursos"
+      "main"
+      "footer-cursos";
+  }
+  nav {
+    grid-area: nav;
+  }
+  .header-cursos {
+    grid-area: header-cursos;
+    margin-top: 3.125rem;
+    margin-bottom: 1.5rem;
+  }
+  .fachada {
+    width: 100%;
+  }
+  .interior {
+    display: none;
+  }
+  main {
+    grid-area: main;
+  }
+  .footer-cursos {
+    grid-area: footer;
+  }
+  h3 {
+    color: #354f52;
+    font-size: 1.4rem;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+    text-align: center;
+    letter-spacing: 0.6rem;
+    word-spacing: 0.3rem;
+  }
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    row-gap: 8rem;
+  }
+  .Caja {
+    border: 0.0125rem solid #52796f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .img-box {
+    width: 100%;
+  }
+  .info-box {
+    text-align: center;
+    margin: 2rem;
+    width: 50%;
+  }
+  h2 {
+    font-size: 1.5rem;
+    color: #354f52;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  .btn-caja {
+    background-color: #cad2c5;
+    color: #354f52;
+    padding: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+  }
+  .btn-caja:link,
+  .btn-caja:visited {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .btn-caja:hover {
+    background-color: #84a98c;
+    color: white;
+  }
+}
+/**********************************************************************/
+@media screen and (min-width: 1441px) {
+  .contenedor-cursos {
+    display: grid;
+    grid-template:
+      "nav"
+      "header-cursos"
+      "main"
+      "footer-cursos";
+  }
+  nav {
+    grid-area: nav;
+  }
+  .header-cursos {
+    grid-area: header-cursos;
+    margin-top: 3.125rem;
+    margin-bottom: 1.5rem;
+  }
+  .fachada {
+    height: 100%;
+  }
+  .interior {
+    display: none;
+  }
+  main {
+    grid-area: main;
+  }
+  .footer-cursos {
+    grid-area: footer;
+  }
+  h3 {
+    color: #354f52;
+    font-size: 1.5rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    letter-spacing: 0.6rem;
+    word-spacing: 0.3rem;
+  }
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: 30rem;
+    margin-left: 30rem;
+    row-gap: 5rem;
+  }
+  .Caja {
+    border: 0.0125rem solid #cad2c5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .img-box {
+    width: 100%;
+  }
+  /*.img-box {
+    width: 100%;
+    /* position: relative;*/
+  /*
+  #box-taller {
+    position: relative;
+  }
+  #box-taller img {
+    /* position: absolute;*/
+  /* opacity: 1.5s ease-in-out;
+    transition: all 0.6s;
+  }
+
+  #box-taller .top:hover {
+    opacity: 0;
+  }*/
+  .info-box {
+    text-align: center;
+    margin: 3rem;
+    width: 50%;
+  }
+  h2 {
+    font-size: 1.4rem;
+    color: #354f52;
+    margin-bottom: 3rem;
+    font-weight: 700;
+  }
+  .btn-caja {
+    background-color: #cad2c5;
+    color: #354f52;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+  }
+  .btn-caja:link,
+  .btn-caja:visited {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .btn-caja:hover {
+    background-color: #84a98c;
+    color: white;
+  }
+}

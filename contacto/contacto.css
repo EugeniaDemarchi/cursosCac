@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+iframe{
+    width: 100%;
+    display: block;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem;
+}
+.contenedor1{
+    display: grid;
+    grid-template:
+    "nav" 80px
+    "header"
+    "main"
+    "footer" 100px;
+
+    .nav {grid-area: nav;
+    }
+
+    .header {grid-area: header;
+    }
+}
+main{
+    color: #354f52;
+    text-align: center;
+}
+h2{color: #2f3e46;
+    padding: 10px;
+}
+#contactanos{
+    text-align: center;
+}
+.forms{
+    outline: solid red;
+}
+.inp{
+color:#354f52;
+padding: 5px;
+}
+#nombre{
+    outline: solid blue;
+    
+    width: 100%;
+}
+input{
+    width: 50%;
+    text-align: center;
+   border: solid #2f3e46 1px;
+}
+
+

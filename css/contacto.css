@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body, .formulario {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  color: #354f52;
+  letter-spacing: 0.6rem;
+  word-spacing: 0.3rem;
+}
+.contenedor {
+  display: grid;
+  grid-template:
+    "nav" 80px
+    "header"
+    "main"
+    "footer" 100px;
+
+  .nav {
+    grid-area: nav;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}
+h2{
+  text-align: center;
+  padding-top: 10px;
+}
+.formulario{
+  width: 80%;
+  padding: 20px 0px 50px 500px;
+  
+}
+
+

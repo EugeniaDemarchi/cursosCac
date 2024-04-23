@@ -17,7 +17,8 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   color: #354f52;
-  word-spacing: 0.2rem;
+  /* letter-spacing: 0.6rem; */
+  word-spacing: 0.3rem;
 }
 
 .contenedor {

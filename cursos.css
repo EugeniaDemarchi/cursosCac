@@ -141,21 +141,20 @@ main {
     width: 100%;
     height: 40vh;
     background-image: url(./Banner\ de\ paisaje\ en\ Azul\ y\ Amarillo\ estilo\ Naturaleza\ y\ Viajes.jpg);
-    transition-property: all;
-    transition-duration: 1.5s;
+    /* transition-property: all;
+    transition-duration: 1.5s;*/
   }
-  .fachada:hover {
-    opacity: 0;
+  /*.fachada:hover {
+   opacity: 0;
   }
   .interior {
     width: 100%;
     height: 40vh;
     background-image: url(./2.jpg);
-    display: none;
-  }
-  .footer {
-    grid-area: footer;
-  }
+    display: none;*/
+}
+.footer {
+  grid-area: footer;
 }
 
 /***********************************************************/
@@ -184,18 +183,18 @@ main {
     width: 100%;
     height: 40vh;
     background-image: url(./Banner\ de\ paisaje\ en\ Azul\ y\ Amarillo\ estilo\ Naturaleza\ y\ Viajes.jpg);
-    transition-property: all;
-    transition-duration: 1.5s;
+    /*transition-property: all;
+    transition-duration: 1.5s;*/
   }
-  .fachada:hover {
+  /*.fachada:hover {
     opacity: 0;
-  }
-  .interior {
+  }*/
+  /*.interior {
     width: 100%;
     height: 40vh;
     background-image: url(./2.jpg);
     display: none;
-  }
+  }*/
   main {
     grid-area: main;
   }
@@ -287,10 +286,10 @@ main {
     width: 100%;
     height: 40vh;
     background-image: url(./Banner\ de\ paisaje\ en\ Azul\ y\ Amarillo\ estilo\ Naturaleza\ y\ Viajes.jpg);
-    transition-property: all;
-    transition-duration: 1.5s;
+    /* transition-property: all;
+    transition-duration: 1.5s;*/
   }
-  .fachada:hover {
+  /*.fachada:hover {
     opacity: 0;
   }
   .interior {
@@ -298,7 +297,7 @@ main {
     height: 40vh;
     background-image: url(./2.jpg);
     display: none;
-  }
+  }*/
 
   main {
     grid-area: main;
@@ -397,10 +396,10 @@ main {
     width: 100%;
     height: 40vh;
     background-image: url(./Banner\ de\ paisaje\ en\ Azul\ y\ Amarillo\ estilo\ Naturaleza\ y\ Viajes.jpg);
-    transition-property: all;
-    transition-duration: 1.5s;
+    /*  transition-property: all;
+    transition-duration: 1.5s;*/
   }
-  .fachada:hover {
+  /*.fachada:hover {
     opacity: 0;
   }
   .interior {
@@ -408,7 +407,7 @@ main {
     height: 40vh;
     background-image: url(./2.jpg);
     display: none;
-  }
+  }*/
   main {
     grid-area: main;
   }

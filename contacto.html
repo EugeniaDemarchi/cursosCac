@@ -39,25 +39,26 @@
             <div class="field">
               <label for="sendername" class="form-label">Nombre</label>
               <input type="text" name="sendername" id="sendername" class="form-control"
-                placeholder="Por favor, escribe tu nombre">
+                placeholder="Por favor, escribe tu nombre" required>
             </div>
             <label for="senderemail" class="form-label">Email</label>
-            <input type="text" name="senderemail" id="senderemail" class="form-control"
+            <input type="email" name="senderemail" id="senderemail" class="form-control" pattern=".+@example\.com" required required
               placeholder="nombre@ejemplo.com">
           </div>
           <div class="field">
             <label for="subject" class="form-label">Asunto</label>
-            <input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto">
+            <input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto" required>
           </div>
           <div class="field">
             <label for="message" class="form-label">Mensaje</label>
-            <textarea type="text" name="message" id="message" class="form-control" placeholder="Dejanos tu mensaje"></textarea>
+            <textarea type="text" name="message" id="message" class="form-control" placeholder="Dejanos tu mensaje" required></textarea>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
             <label class="form-check-label" for="flexCheckDefault">No eres un robot</label>
           </div>
           <input type="submit" class="btn btn-light" id="button" value="Enviar">
+          <p class="warnings" id="warnings"></p>
         </form>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script type="text/javascript">emailjs.init('cWi6Kq7nOLl7CycCL')</script>

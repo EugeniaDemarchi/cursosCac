@@ -37,31 +37,32 @@ body {
     grid-area: header;
   }
 
-  #fachada {
+  .fachada {
     margin-top: -670px;
     width: 100%;
-    height: 670px;
-    transition-property: all;
-    transition-duration: 1.5s;
+    /*height: 670px;*/
+    height: 40vh;
+    background-image: url(imagenes/banner_acerca_de2.png);
+    /* transition-property: all;
+    transition-duration: 1.5s;*/
   }
 
-  #interior {
+  /* #interior {
     width: 100%;
     height: 670px;
   }
 
   #fachada:hover {
     opacity: 0;
-  }
+  }*/
 
   .main {
     grid-area: main;
     text-align: center;
     margin: 50px 200px;
-    h1{
+    h1 {
       margin: 50px;
     }
-
   }
 
   .footer {

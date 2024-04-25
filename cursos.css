@@ -16,44 +16,43 @@ body {
   font-size: 1.2rem;
 }
 
-.contenedor-cursos {
+.contenedor {
   display: grid;
   grid-template:
     "nav"
-    "header-cursos"
+    "header"
     "main"
-    "footer-cursos";
+    "footer";
 }
 nav {
   grid-area: nav;
 }
-.header-cursos {
-  grid-area: header-cursos;
+.header {
+  grid-area: header;
 }
-
 main {
   grid-area: main;
 }
-.footer-cursos {
+.footer {
   grid-area: footer;
 }
 
 /**********media queries***********/
 
 @media screen and (max-width: 767px) {
-  .contenedor-cursos {
+  .contenedor {
     display: grid;
     grid-template:
       "nav"
-      "header-cursos"
+      "header"
       "main"
-      "footer-cursos";
+      "footer";
   }
   nav {
     grid-area: nav;
   }
-  .header-cursos {
-    grid-area: header-cursos;
+  .header {
+    grid-area: header;
   }
 
   main {
@@ -62,7 +61,7 @@ main {
 
   h3 {
     color: #354f52;
-    margin-top: 2.6rem;
+    margin-top: 2.5rem;
     text-align: center;
     letter-spacing: 0.3rem;
     word-spacing: 0.1rem;
@@ -129,50 +128,78 @@ main {
     color: white;
   }
 
-  .header-cursos {
+  .header {
     margin-top: 3.125rem;
-    margin-bottom: 1.5rem;
-    .fachada {
+    margin-bottom: 3.125rem;
+  }
+
+  /* .fachada {
       width: 100%;
-    }
-    .interior {
-      display: none;
-    }
-    .footer-cursos {
-      grid-area: footer;
-    }
+      height: 100%;
+    }*/
+  .fachada {
+    width: 100%;
+    height: 40vh;
+    background-image: url(./Banner\ de\ paisaje\ en\ Azul\ y\ Amarillo\ estilo\ Naturaleza\ y\ Viajes.jpg);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+  .fachada:hover {
+    opacity: 0;
+  }
+  .interior {
+    width: 100%;
+    height: 40vh;
+    background-image: url(./2.jpg);
+    display: none;
+  }
+  .footer {
+    grid-area: footer;
   }
 }
 
 /***********************************************************/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .contenedor-cursos {
+  .contenedor {
     display: grid;
     grid-template:
       "nav"
-      "header-cursos"
+      "header"
       "main"
-      "footer-cursos";
+      "footer";
   }
   nav {
     grid-area: nav;
   }
-  .header-cursos {
-    grid-area: header-cursos;
+  .header {
+    grid-area: header;
     margin-top: 3.125rem;
     margin-bottom: 1.5rem;
   }
+  /*.fachada {
+    width: 100%;
+  }*/
   .fachada {
     width: 100%;
+    height: 40vh;
+    background-image: url(./Banner\ de\ paisaje\ en\ Azul\ y\ Amarillo\ estilo\ Naturaleza\ y\ Viajes.jpg);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+  .fachada:hover {
+    opacity: 0;
   }
   .interior {
+    width: 100%;
+    height: 40vh;
+    background-image: url(./2.jpg);
     display: none;
   }
   main {
     grid-area: main;
   }
-  .footer-cursos {
+  .footer {
     grid-area: footer;
   }
   h3 {
@@ -237,28 +264,42 @@ main {
 
 /********************************************************************/
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .contenedor-cursos {
+  .contenedor {
     display: grid;
     grid-template:
       "nav"
-      "header-cursos"
+      "header"
       "main"
-      "footer-cursos";
+      "footer";
   }
   nav {
     grid-area: nav;
   }
-  .header-cursos {
-    grid-area: header-cursos;
+  .header {
+    grid-area: header;
     margin-top: 3.125rem;
     margin-bottom: 1.5rem;
   }
+  /* .fachada {
+    width: 100%;
+  }*/
   .fachada {
     width: 100%;
+    height: 40vh;
+    background-image: url(./Banner\ de\ paisaje\ en\ Azul\ y\ Amarillo\ estilo\ Naturaleza\ y\ Viajes.jpg);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+  .fachada:hover {
+    opacity: 0;
   }
   .interior {
+    width: 100%;
+    height: 40vh;
+    background-image: url(./2.jpg);
     display: none;
   }
+
   main {
     grid-area: main;
   }
@@ -328,39 +369,57 @@ main {
 }
 /**********************************************************************/
 @media screen and (min-width: 1441px) {
-  .contenedor-cursos {
+  .contenedor {
     display: grid;
     grid-template:
       "nav"
-      "header-cursos"
+      "header"
       "main"
-      "footer-cursos";
+      "footer";
   }
   nav {
     grid-area: nav;
   }
-  .header-cursos {
-    grid-area: header-cursos;
+  .header {
+    grid-area: header;
     margin-top: 3.125rem;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem;*/
   }
-  .fachada {
-    height: 100%;
+  /*.fachada {
+    width: 100%;
+    height: 40vh;
+    background-image: url(./Banner\ de\ paisaje\ en\ Azul\ y\ Amarillo\ estilo\ Naturaleza\ y\ Viajes.jpg);
   }
   .interior {
+    display: none;
+  }*/
+  .fachada {
+    width: 100%;
+    height: 40vh;
+    background-image: url(./Banner\ de\ paisaje\ en\ Azul\ y\ Amarillo\ estilo\ Naturaleza\ y\ Viajes.jpg);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+  .fachada:hover {
+    opacity: 0;
+  }
+  .interior {
+    width: 100%;
+    height: 40vh;
+    background-image: url(./2.jpg);
     display: none;
   }
   main {
     grid-area: main;
   }
-  .footer-cursos {
+  .footer {
     grid-area: footer;
   }
   h3 {
     color: #354f52;
     font-size: 1.5rem;
     margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     text-align: center;
     letter-spacing: 0.6rem;
     word-spacing: 0.3rem;

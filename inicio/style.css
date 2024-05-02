@@ -20,7 +20,6 @@ footer {
 
 /* Estilos del encabezado */
 header {
-  
   position: fixed;
   top: 0;
   left: 0;
@@ -31,9 +30,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color:#84a98c; /* Color de fondo del navbar */
+  background-color: #84a98c; /* Color de fondo del navbar */
 }
-
 
 header .logo-container {
   display: flex;
@@ -53,7 +51,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color:#2f3e46 ;
+  color: #2f3e46;
   font-weight: 150px;
   font-size: larger;
   transition: color 0.3s;
@@ -63,8 +61,6 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #cad2c5;
 }
-
-
 
 header a {
   color: #fff;
@@ -89,9 +85,6 @@ nav li a:hover {
 .logo-image {
   max-height: 50px;
 }
-
- 
- 
 
 main {
   margin-top: 60px;
@@ -124,7 +117,7 @@ section {
 
 section h1 {
   text-align: center;
-  color: #354f52
+  color: #354f52;
 }
 
 section a {
@@ -136,8 +129,6 @@ section a {
   font-weight: bold;
   font-size: 20px;
 }
-
- 
 
 /* Estilos del pie de página */
 footer {
@@ -184,8 +175,6 @@ footer {
   margin: 0.5rem 0;
   text-align: center;
 }
-
- 
 
 #hero-image {
   width: 100%;
